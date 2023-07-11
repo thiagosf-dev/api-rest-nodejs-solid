@@ -43,6 +43,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Dotenv
 - Zod
 - Eslint
+- Prisma ORM
 
 ## Conceitos aplicados
 
@@ -52,6 +53,8 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Validação de variáveis via schema validation
 - Padrão de lint de codificação
 - Aliases de importação
+- Object Relational Mapping
+- Migrations
 
 ## Geral
 
@@ -159,6 +162,62 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 1. criado script para rodar o ESlint e fazer o fix: `"eslint:fix": "eslint --ext .js,.ts src --fix"````
 
 1. criado o arquivo `.eslintignore`
+
+## Prisma ORM
+
+1. instalado com o comando:
+
+    ```shell
+      npm i -D prisma
+    ```
+
+1. iniciado o Prisma com o comando:
+
+    ```shell
+      npx prisma init
+    ```
+
+1. instalada a extensão do `vscode` para o Prisma: `prisma.io`
+
+1. ajustado o arquivo `.vscode/settings.json`:
+
+    ```json
+      {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "sourse.fixAll.eslint": true,
+          "source.organizeImports": false
+        },
+        "files.eol": "\n",
+        "[javascript]": {
+          "editor.formatOnSave": false,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+        "[prisma]": {
+          "editor.formatOnSave": true
+        },
+        "[typescript]": {
+          "editor.formatOnSave": false,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+      }
+    ```
+
+1. criada a tipagem automatizada do model com o comando:
+
+    ```shell
+      npx prisma generate
+    ```
+
+1. instalada dependência para manipular o banco de dados com o comando:
+
+    ```shell
+      npm i @prisma/client
+    ```
 
 ## Como testar essa API
 
