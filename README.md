@@ -44,6 +44,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Zod
 - Eslint
 - Prisma ORM
+- Docker
 
 ## Conceitos aplicados
 
@@ -55,6 +56,9 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Aliases de importação
 - Object Relational Mapping
 - Migrations
+- Containerização com Docker
+- Docker hub
+- Docker compose
 
 ## Geral
 
@@ -217,6 +221,70 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
     ```shell
       npm i @prisma/client
+    ```
+
+1. rodando as migrations com o comando:
+
+    ```shel
+      npx prisma migrate dev
+    ```
+
+1. rodando o Prisma Studio com o comando:
+
+    ```shel
+      npx prisma studio
+    ```
+
+## Docker
+
+1. instalado docker desktop
+
+2. versão do docker informada no comando:
+
+    ```shell
+      docker -v
+    ```
+
+3. imagem do Postgres da Bitname excutada com o comando:
+
+    ```shell
+      docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolidpg -p 5432:5432 bitnami/postgres
+    ```
+
+4. listando todos os containers que estão em execução:
+
+    ```shell
+      docker ps
+    ```
+
+5. listando todos os containers já criados:
+
+    ```shell
+      docker ps -a
+    ```
+
+6. subindo o container:
+
+    ```shell
+      docker start api-solid-pg
+    ```
+
+7. parando o container:
+
+    ```shell
+      docker stop api-solid-pg
+    ```
+
+8. removendo o container:
+
+    ```shell
+      docker rm api-solid-pg
+    ```
+
+9. visualizando os logs d container:
+
+    ```shell
+      docker logs api-solid-pg
     ```
 
 ## Como testar essa API
