@@ -1,0 +1,31 @@
+{
+  "name": "03-api-solid",
+  "version": "1.0.0",
+  "description": "GymPass style API",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "tsup src --out-dir build",
+    "dev": "tsx watch .",
+    "prod": "node build/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagosf-dev/api-rest-nodejs-solid.git"
+  },
+  "author": "Thiago Soares Figueiredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagosf-dev/api-rest-nodejs-solid/issues"
+  },
+  "homepage": "https://github.com/thiagosf-dev/api-rest-nodejs-solid#readme",
+  "devDependencies": {
+    "@types/node": "20.4.1",
+    "tsup": "7.1.0",
+    "tsx": "3.12.7",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "fastify": "4.19.2"
+  }
+}

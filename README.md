@@ -37,6 +37,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Javascript
 - Typescript
 - NodeJS
+- NPM
 - Git
 - Editor Config
 
@@ -61,7 +62,45 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. repositório do projeto disponibilizado em: <https://github.com/thiagosf-dev/api-rest-nodejs-solid>
 
-## Como testar esa API
+## Starter
+
+1. projeto criado com o comando:
+
+    ```shell
+      npm init
+    ```
+
+## Typescript
+
+1. instalação com o comando:
+
+    ```shell
+      npm i -D typescript @types/node tsx tsup
+    ```
+
+1. criado o arquivo `tsconfig.json` com o comando:
+
+    ```shell
+      npx tsc --init
+    ```
+
+## Fastify
+
+1. instalado com o comando:
+
+    ```shell
+      npm i fastify
+    ```
+
+## NPM
+
+1. criado na raíz do projeto o arquivo `.npmrc` com a seguinte configuração:
+
+    ```.npmrc
+      save-exact=true
+    ```
+
+## Como testar essa API
 
 1. em uma pasta de sua preferência, faça o clone do projeto com o comando:
 
