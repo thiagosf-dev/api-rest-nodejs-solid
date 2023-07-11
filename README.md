@@ -50,6 +50,8 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Engenharia de Requisitos
 - Variáveis de ambiente
 - Validação de variáveis via schema validation
+- Padrão de lint de codificação
+- Aliases de importação
 
 ## Geral
 
@@ -87,6 +89,17 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
     ```shell
       npx tsc --init
+    ```
+
+1. configurado o arquivo `tsconfig.json` para alias import:
+
+    ```json
+      "baseUrl": "./",
+      "paths": {
+        "@/*": [
+          "./src/*"
+        ]
+      },
     ```
 
 ## Fastify
