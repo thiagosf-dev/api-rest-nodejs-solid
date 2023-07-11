@@ -42,6 +42,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Editor Config
 - Dotenv
 - Zod
+- Eslint
 
 ## Conceitos aplicados
 
@@ -125,6 +126,26 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
     ```shell
       npm i zod
     ```
+
+## Eslint
+
+1. instalado o ESLint com o comando:
+
+    ```shell
+      npm i -D eslint @rocketseat/eslint-config
+    ```
+
+1. criado na raíz do projeto o arquivo de configuração do ESLint: `.eslintrc.json`
+
+1. configurado o `.eslintrc.json`: `{
+  "extends": [
+    "@rocketseat/eslint-config/node"
+  ]
+}`
+
+1. criado script para rodar o ESlint e fazer o fix: `"eslint:fix": "eslint --ext .js,.ts src --fix"````
+
+1. criado o arquivo `.eslintignore`
 
 ## Como testar essa API
 
