@@ -287,6 +287,28 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
       docker logs api-solid-pg
     ```
 
+## Docker Compose
+
+1. criado na raíz do projeto o arquivo `docker-compose.yml`
+
+1. subindo container com o docker compose:
+
+    ```shell
+      docker compose up -d
+    ```
+
+1. parando container com o docker compose:
+
+    ```shell
+      docker compose stop
+    ```
+
+1. removendo container com o docker compose:
+
+    ```shell
+      docker compose down
+    ```
+
 ## Como testar essa API
 
 1. em uma pasta de sua preferência, faça o clone do projeto com o comando:
