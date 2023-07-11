@@ -40,11 +40,15 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - NPM
 - Git
 - Editor Config
+- Dotenv
+- Zod
 
 ## Conceitos aplicados
 
 - Design de Software
 - Engenharia de Requisitos
+- Variáveis de ambiente
+- Validação de variáveis via schema validation
 
 ## Geral
 
@@ -98,6 +102,28 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
     ```.npmrc
       save-exact=true
+    ```
+
+## Environments Variables
+
+1. criado o arquivo `.env` e o `.env.example` com a seguinte configuração:
+
+    ```.env
+      NODE_ENV=dev
+    ```
+
+1. instalado Dotenv com o comando:
+
+    ```shell
+      npm i dotenv
+    ```
+
+## Zod
+
+1. instalado com o comando:
+
+    ```shell
+      npm i zod
     ```
 
 ## Como testar essa API
