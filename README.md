@@ -62,6 +62,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Criptografia Hashing
 - Primary key e Foregein key
 - Relacionamentos entre tabelas
+- Estruturando com controllers e services
 
 ## Geral
 
