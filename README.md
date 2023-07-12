@@ -59,6 +59,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Containerização com Docker
 - Docker hub
 - Docker compose
+- Criptografia Hashing
 
 ## Geral
 
