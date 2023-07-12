@@ -66,6 +66,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Estruturando com controllers e services
 - Criptografia e hash para senha
 - Repository pattern
+- S.O.L.I.D.
 
 ## Geral
 
