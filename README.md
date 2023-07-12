@@ -45,6 +45,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Eslint
 - Prisma ORM
 - Docker
+- Bcrypt
 
 ## Conceitos aplicados
 
@@ -63,6 +64,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Primary key e Foregein key
 - Relacionamentos entre tabelas
 - Estruturando com controllers e services
+- Criptografia e hash para senha
 
 ## Geral
 
@@ -311,6 +313,18 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
     ```shell
       docker compose down
+    ```
+
+## Bcrypt
+
+1. instaldo com o comando:
+
+    ```shell
+      npm i bcryptjs
+    ```
+
+    ```shell
+      npm i -D @types/bcryptjs
     ```
 
 ## Como testar essa API
