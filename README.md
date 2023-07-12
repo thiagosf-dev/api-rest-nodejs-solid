@@ -46,6 +46,8 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Prisma ORM
 - Docker
 - Bcrypt
+- Jest
+- Vitest
 
 ## Conceitos aplicados
 
@@ -68,6 +70,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Repository pattern
 - S.O.L.I.D.
 - Handler de erros globais
+- TDD
 
 ## Geral
 
@@ -328,6 +331,23 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
     ```shell
       npm i -D @types/bcryptjs
+    ```
+
+## Teste
+
+1. instalação do Vitest:
+
+    ```shell
+      npm i _D vitest vite-tsconfig-paths
+    ```
+
+1. criado na raíz do projeto o arquivo `vite.config.ts`
+
+1. criado no `package.json` o script:
+
+    ```JSON
+     "test": "vitest run",
+     "test:w": "vitest"
     ```
 
 ## Como testar essa API
