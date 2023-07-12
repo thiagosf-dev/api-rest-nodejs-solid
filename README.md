@@ -60,6 +60,8 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Docker hub
 - Docker compose
 - Criptografia Hashing
+- Primary key e Foregein key
+- Relacionamentos entre tabelas
 
 ## Geral
 
