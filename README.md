@@ -71,6 +71,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Handler de erros globais
 - Testes Unitários
 - In Memory Test Database
+- Coverage Report
 
 ## Geral
 
@@ -82,7 +83,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. projeto iniciado com o comando
 
-    ```shell
+    ```SHELL
       git init
     ```
 
@@ -92,7 +93,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. projeto criado com o comando:
 
-    ```shell
+    ```SHELL
       npm init
     ```
 
@@ -100,13 +101,13 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalação com o comando:
 
-    ```shell
+    ```SHELL
       npm i -D typescript @types/node tsx tsup
     ```
 
 1. criado o arquivo `tsconfig.json` com o comando:
 
-    ```shell
+    ```SHELL
       npx tsc --init
     ```
 
@@ -125,7 +126,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalado com o comando:
 
-    ```shell
+    ```SHELL
       npm i fastify
     ```
 
@@ -147,7 +148,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalado Dotenv com o comando:
 
-    ```shell
+    ```SHELL
       npm i dotenv
     ```
 
@@ -155,7 +156,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalado com o comando:
 
-    ```shell
+    ```SHELL
       npm i zod
     ```
 
@@ -163,7 +164,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalado o ESLint com o comando:
 
-    ```shell
+    ```SHELL
       npm i -D eslint @rocketseat/eslint-config
     ```
 
@@ -183,13 +184,13 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalado com o comando:
 
-    ```shell
+    ```SHELL
       npm i -D prisma
     ```
 
 1. iniciado o Prisma com o comando:
 
-    ```shell
+    ```SHELL
       npx prisma init
     ```
 
@@ -225,13 +226,13 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. criada a tipagem automatizada do model com o comando:
 
-    ```shell
+    ```SHELL
       npx prisma generate
     ```
 
 1. instalada dependência para manipular o banco de dados com o comando:
 
-    ```shell
+    ```SHELL
       npm i @prisma/client
     ```
 
@@ -253,49 +254,49 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 2. versão do docker informada no comando:
 
-    ```shell
+    ```SHELL
       docker -v
     ```
 
 3. imagem do Postgres da Bitname excutada com o comando:
 
-    ```shell
+    ```SHELL
       docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolidpg -p 5432:5432 bitnami/postgres
     ```
 
 4. listando todos os containers que estão em execução:
 
-    ```shell
+    ```SHELL
       docker ps
     ```
 
 5. listando todos os containers já criados:
 
-    ```shell
+    ```SHELL
       docker ps -a
     ```
 
 6. subindo o container:
 
-    ```shell
+    ```SHELL
       docker start api-solid-pg
     ```
 
 7. parando o container:
 
-    ```shell
+    ```SHELL
       docker stop api-solid-pg
     ```
 
 8. removendo o container:
 
-    ```shell
+    ```SHELL
       docker rm api-solid-pg
     ```
 
 9. visualizando os logs d container:
 
-    ```shell
+    ```SHELL
       docker logs api-solid-pg
     ```
 
@@ -305,19 +306,19 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. subindo container com o docker compose:
 
-    ```shell
+    ```SHELL
       docker compose up -d
     ```
 
 1. parando container com o docker compose:
 
-    ```shell
+    ```SHELL
       docker compose stop
     ```
 
 1. removendo container com o docker compose:
 
-    ```shell
+    ```SHELL
       docker compose down
     ```
 
@@ -325,11 +326,11 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instaldo com o comando:
 
-    ```shell
+    ```SHELL
       npm i bcryptjs
     ```
 
-    ```shell
+    ```SHELL
       npm i -D @types/bcryptjs
     ```
 
@@ -337,7 +338,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 1. instalação do Vitest:
 
-    ```shell
+    ```SHELL
       npm i -D vitest vite-tsconfig-paths
     ```
 
@@ -350,16 +351,28 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
      "test:w": "vitest"
     ```
 
+1. instalada a lib de coverage `@vitest/coverage-v8` após executar o seguinte script adicionado no `package.json`
+
+    ```JSON
+      "test:c": "vitest run --coverage"
+    ```
+
+    com o comando:
+
+    ```SHELL
+      npm run test:c
+    ```
+
 ## Como testar essa API
 
 1. em uma pasta de sua preferência, faça o clone do projeto com o comando:
 
-    ```shell
+    ```SHELL
       git clone https://github.com/thiagosf-dev/api-rest-nodejs-solid.git
     ```
 
 1. abra a pasta criada após o comando acima, e digite o comando:
 
-    ```shell
+    ```SHELL
       npm install
     ```
