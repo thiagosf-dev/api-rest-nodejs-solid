@@ -16,22 +16,24 @@ export async function register(
 
   const { email, name, password } = registerBodySchema.parse(request.body)
 
+  let user = null
+
   try {
     const usersRepository = new PrismaUsersRepository()
     const registerUseCase = new RegisterUseCase(usersRepository)
 
-    await registerUseCase.execute({
+    user = await registerUseCase.execute({
       email,
       name,
       password,
     })
   } catch (error) {
     if (error instanceof UserAlreadyExistsError) {
-      return response.status(409).send(error)
+      return response.status(409).send({ message: error })
     }
 
     throw error
   }
 
-  return response.status(201).send()
+  return response.status(201).send({ user })
 }

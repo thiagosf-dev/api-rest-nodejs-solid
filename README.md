@@ -4,7 +4,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 ## Requisitos Funcionais
 
-- [ ] deve ser possível se cadastrar
+- [X] deve ser possível se cadastrar
 - [ ] deve ser possível se autenticar
 - [ ] deve ser possível obter o perfil de um usuário logado
 - [ ] deve ser possível obter o número de check-ins realizados pelo usuário logado
@@ -17,7 +17,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 ## Regras de Negócio
 
-- [ ] o usuário não deve poder se cadastrar com um e-mail duplicado
+- [X] o usuário não deve poder se cadastrar com um e-mail duplicado
 - [ ] o usuário não pode fazer 2 check-ins no mesmo dia
 - [ ] o usuário não pode fazer check-in se não estiver perto (100m) da academia
 - [ ] o check-in só pode ser valido até 20 minutos após criado
@@ -27,8 +27,8 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 
 ## Requisitos Não Funcionais
 
-- [ ] a senha do usuário precisa estar criptografada
-- [ ] os dados da aplicação precisam estar persistido em um banco PostgreSQL
+- [X] a senha do usuário precisa estar criptografada
+- [X] os dados da aplicação precisam estar persistido em um banco PostgreSQL
 - [ ] todas as listas de dados precisam estar paginadas com 20 itens por página
 - [ ] o usuário deve ser identificado por um JWT
 
@@ -73,6 +73,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - In Memory Test Database
 - Coverage Report
 - UI view para os testes
+- Aplicando (SUT - system under test) como um modelo para maior produtividade na implementação dos testes
 
 ## Geral
 
