@@ -5,7 +5,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 ## Requisitos Funcionais
 
 - [X] deve ser possível se cadastrar
-- [ ] deve ser possível se autenticar
+- [X] deve ser possível se autenticar
 - [ ] deve ser possível obter o perfil de um usuário logado
 - [ ] deve ser possível obter o número de check-ins realizados pelo usuário logado
 - [ ] deve ser possível o usuário obter seu histórico de check-ins
@@ -66,14 +66,15 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Relacionamentos entre tabelas
 - Estruturando com controllers e services
 - Criptografia e hash para senha
-- Repository pattern
 - S.O.L.I.D.
+- Repository pattern
 - Handler de erros globais
 - Testes Unitários
 - In Memory Test Database
 - Coverage Report
 - UI view para os testes
 - Aplicando (SUT - system under test) como um modelo para maior produtividade na implementação dos testes
+- Factory Pattern
 
 ## Geral
 
