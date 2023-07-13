@@ -72,6 +72,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
 - Testes Unitários
 - In Memory Test Database
 - Coverage Report
+- UI view para os testes
 
 ## Geral
 
@@ -363,6 +364,24 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
       npm run test:c
     ```
 
+1. instalada a UI do vitest com o comando:
+
+    ```SHEL
+      npm i -D @vitest/ui
+    ```
+
+1. criado no `package.json` o script para executar a UI:
+
+    ```JSON
+      "test:ui": "vitest --ui"
+    ```
+
+    com o comando:
+
+    ```SHEL
+      npm run test:ui
+    ```
+
 ## Como testar essa API
 
 1. em uma pasta de sua preferência, faça o clone do projeto com o comando:
@@ -371,7 +390,7 @@ Projeto do módulo 3 do curso de Nodejs da Rocktseat (GymPass style App)
       git clone https://github.com/thiagosf-dev/api-rest-nodejs-solid.git
     ```
 
-1. abra a pasta criada após o comando acima, e digite o comando:
+2. abra a pasta criada após o comando acima, e digite o comando:
 
     ```SHELL
       npm install
